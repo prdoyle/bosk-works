@@ -1,0 +1,143 @@
+{
+  "id": "root",
+  "entities": {
+    "order": [
+      "parent"
+    ],
+    "contents": {
+      "parent": {
+        "id": "parent",
+        "string": "parent",
+        "testEnum": "OK",
+        "children": {
+          "order": [
+            "child1",
+            "child2",
+            "child3"
+          ],
+          "contents": {
+            "child1": {
+              "id": "child1",
+              "string": "child1",
+              "testEnum": "OK",
+              "children": {
+                "order": [],
+                "contents": {}
+              },
+              "oddChildren": {
+                "catalog": "entities/parent/children/child1/children",
+                "ids": []
+              },
+              "stringMapping": {
+                "catalog": "entities/parent/children/child1/children",
+                "valuesById": {}
+              },
+              "optionals": {
+                "id": "child1_optionals"
+              },
+              "implicitRefs": {
+                "id": "child1_implicitRefs"
+              }
+            },
+            "child2": {
+              "id": "child2",
+              "string": "child2",
+              "testEnum": "NOT_SO_OK",
+              "children": {
+                "order": [],
+                "contents": {}
+              },
+              "oddChildren": {
+                "catalog": "entities/parent/children/child2/children",
+                "ids": []
+              },
+              "stringMapping": {
+                "catalog": "entities/parent/children/child2/children",
+                "valuesById": {}
+              },
+              "optionals": {
+                "id": "child2_optionals"
+              },
+              "implicitRefs": {
+                "id": "child2_implicitRefs"
+              }
+            },
+            "child3": {
+              "id": "child3",
+              "string": "child3",
+              "testEnum": "OK",
+              "children": {
+                "order": [],
+                "contents": {}
+              },
+              "oddChildren": {
+                "catalog": "entities/parent/children/child3/children",
+                "ids": []
+              },
+              "stringMapping": {
+                "catalog": "entities/parent/children/child3/children",
+                "valuesById": {}
+              },
+              "optionals": {
+                "id": "child3_optionals"
+              },
+              "implicitRefs": {
+                "id": "child3_implicitRefs"
+              }
+            }
+          }
+        },
+        "oddChildren": {
+          "catalog": "entities/parent/children",
+          "ids": [
+            "child1",
+            "child3"
+          ]
+        },
+        "stringMapping": {
+          "catalog": "entities/parent/children",
+          "valuesById": {
+            "child2": "I\u0027m child 2"
+          }
+        },
+        "optionals": {
+          "id": "optionals",
+          "optionalString": "rootString",
+          "optionalEntity": {
+            "id": "entity2"
+          },
+          "optionalRef": "entities/parent",
+          "optionalCatalog": {
+            "order": [
+              "OptionalTestEntity2"
+            ],
+            "contents": {
+              "OptionalTestEntity2": {
+                "id": "OptionalTestEntity2"
+              }
+            }
+          },
+          "optionalListing": {
+            "catalog": "entities/parent/children",
+            "ids": [
+              "child2"
+            ]
+          },
+          "optionalMapping": {
+            "catalog": "entities/parent/children",
+            "valuesById": {
+              "child2": "String value associated with child2"
+            }
+          }
+        },
+        "implicitRefs": {
+          "id": "parent_implicitRefs"
+        }
+      }
+    }
+  },
+  "someStrings": [
+    "One",
+    "Two"
+  ]
+}
